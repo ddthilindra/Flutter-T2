@@ -1,0 +1,51 @@
+void main(){
+	List<int> list =[1,2,3];
+	list.add[4];
+	print(list);
+	print(list[2]);
+	
+	//####################################################
+	
+	for (var x in list){
+	 	print(x);
+	}
+	
+	for (var i; i < list; i++){
+		print(list);
+	}
+	
+	list.forEach((x) {
+		print(x);
+	})
+	
+	list.forEach((x) => print(x))
+
+	//###################################################
+	
+	List<int> squres = list.map((x) => x*x);
+	squres.forEach((x) => print(x));
+	
+	var sq = list.map((x) => x*2);
+	print(sq);
+	
+	List<String> names =['Max','Ed','Sera'];
+	var lengthNames= names.map((name) => name.length);
+	print(lengthNames);
+	
+	//####################################################
+	
+	Map<String, int> cats = {
+		'Piper':3,
+		'Mickey':4
+	};
+	
+	print("Mickey is $(cats['Mickey']) years old");
+	
+	cats['Mickey']=6;
+	cats['Piper']=5;
+	
+	print("Mickey is $(cats['Mickey']) years old");
+	print("Mickey is $(cats['Piper']) years old");
+
+}
+
